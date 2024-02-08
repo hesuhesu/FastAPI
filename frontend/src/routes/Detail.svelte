@@ -16,6 +16,7 @@
             question = json
         })
     }
+
     get_question()
 
     function post_answer(event) {
@@ -26,7 +27,7 @@
         }
         fastapi('post', url, params, 
             (json) => {
-                content = ""
+                content = ''
                 error = {detail:[]}
                 get_question()
             },
@@ -50,7 +51,7 @@
             </div>
         </div>
     </div>
-    
+
     <button class="btn btn-secondary" on:click="{() => {
         push('/')
     }}">목록으로</button>

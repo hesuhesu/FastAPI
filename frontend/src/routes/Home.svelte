@@ -21,7 +21,7 @@
             total = json.total
         })
     }
-    
+
     $: get_question_list($page)
 </script>
 
